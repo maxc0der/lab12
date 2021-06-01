@@ -56,7 +56,7 @@ int main(const int argc, const char* argv[]) {
 
       page.PrintTable();
 
-      page.DataLoad(vm["threshold"].as<int>()+3);
+      page.DataLoad(vm["threshold"].as<int>()+1);
       Log::GetInstance().Write("Used memory: " +
                                std::to_string(used_memory.Used()));
       Log::GetInstance().
